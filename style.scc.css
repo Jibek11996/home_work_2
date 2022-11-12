@@ -1,0 +1,13 @@
+.block_1{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #efb56c;
+    border: 1px solid;
+}
+.block_2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}

@@ -1,51 +1,42 @@
 
-    // const string = prompt('tel me your name');
-    //
-    // let regExp = /j/i;
-    //
-    // console.log(string.match(regExp));
+      // Задание_1
+      // const block = document.querySelector('.block_2')
+      //
+      // let positionX  = 0;
+      // let positionY  = 0;
+      //
+      // const move = () => {
+      //     if (positionX <= 446 && positionY === 0) {
+      //         positionX +=16;
+      //         block.style.left = `${positionX}px`;
+      //         setTimeout(move, 25);
+      //     } else if (positionX >= 440 && positionY <= 440) {
+      //         positionY += 16;
+      //         block.style.top = `${positionY}px`;
+      //         setTimeout(move, 25);
+      //     } else if (positionX > 0 && positionY > 0){
+      //         positionX -=16;
+      //         block.style.left = `${positionX}px`
+      //         setTimeout(move, 25)
+      //     }
+      //     else if (positionX === 0 && positionY > 0){
+      //         positionY -=16;
+      //         block.style.top = `${positionY}px`
+      //         setTimeout(move, 25)
+      //     }
+      // }
+      // move()
 
-    //*****************************************//
+      // задание_2
 
-    // const letter = 'AaaBbbCccc';
-    // let regExp = /a/gi;
-    // console.log(letter.match(regExp));
-
-
-    //*************************************************************//
-
-    // const numbers = '1234567886858464534239';
-    // const regExp = /\d/g;
-    //
-    // console.log(numbers.match(regExp));
-    // console.log(numbers.replace(regExp, '*'));
-
-
-    // *************************************************************//
-    // const numbers = '12345hjjvj67886jkgj858464hjgj5342839';
-    // const regExp = /\w/g;
-    //
-    // console.log(numbers.match(regExp));
-    // console.log(numbers.replace(regExp, '*'));
-
-    // *************************************************************//
-
-     const phoneInput = document.querySelector('#phoneInput');
-     const phoneCheck = document.querySelector('.phoneCheck');
-     const phoneResult = document.querySelector('.phoneResult');
-
-     const phoneRegExp =  /^\+996 \d{3} \d{2}-\d{2}-\d{2}$/;
-
-     phoneCheck.addEventListener('click', () =>{
-
-          console.log(phoneInput.value);
-          if (phoneRegExp.test(phoneInput.value)){
-               phoneResult.innerText = 'Correct!';
-               phoneResult.style.color = 'green';
-          } else {
-               phoneResult.innerText = 'Error!';
-               phoneResult.style.color = 'red';
-          }
-
-         })
-
+      function startTime (start){
+          console.log(new Date());
+          let stopInterval = setInterval( () => {
+              start++
+              if(start === 10){
+                  clearInterval(stopInterval)
+                    }
+              console.log(start);
+              },1000);
+                }
+                startTime(0)
